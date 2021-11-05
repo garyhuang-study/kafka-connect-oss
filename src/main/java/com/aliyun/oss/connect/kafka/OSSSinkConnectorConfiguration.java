@@ -39,6 +39,7 @@ import io.confluent.connect.storage.partitioner.FieldPartitioner;
 import io.confluent.connect.storage.partitioner.HourlyPartitioner;
 import io.confluent.connect.storage.partitioner.TimeBasedPartitioner;
 import io.confluent.connect.storage.partitioner.PartitionerConfig;
+import com.provectus.kafka.connect.JsonFieldPartitioner;
 import org.apache.kafka.common.config.AbstractConfig;
 import org.apache.kafka.common.config.ConfigDef;
 import org.apache.kafka.common.config.ConfigException;
@@ -113,7 +114,8 @@ public class OSSSinkConnectorConfiguration extends StorageSinkConnectorConfig {
             HourlyPartitioner.class,
             DailyPartitioner.class,
             TimeBasedPartitioner.class,
-            FieldPartitioner.class
+            FieldPartitioner.class,
+            JsonFieldPartitioner.class
         )
     );
   }
