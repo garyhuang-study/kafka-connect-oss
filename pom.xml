@@ -57,6 +57,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.provectus</groupId>
+      <artifactId>kafka-connect-json-partitioner</artifactId>
+      <version>0.1</version>
+    </dependency> 
+    <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>connect-api</artifactId>
       <version>${kafka.version}</version>
